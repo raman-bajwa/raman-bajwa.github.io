@@ -23,6 +23,30 @@ body {
     font-family: "Roboto Mono", monospace
 }
 
+#react-text {
+    color: #242F9B;
+}
+
+#nodejs {
+    color: #0ABD19;
+}
+
+#data-analytics {
+    color: #AA14F0;
+}
+
+#start-up {
+    color: #BD0A55;
+}
+
+#innovation {
+    color: #FF8D29;
+}
+
+#tech {
+    color: #FF0000;
+}
+
 ::selection {
     background-color: var(--highlight);
     color: var(--black)
