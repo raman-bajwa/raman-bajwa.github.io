@@ -1,0 +1,186 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --gray: #8b8b8b;
+    --highlight: #e5ffc3;
+    --red: #e4002b;
+    --green: #24d05a;
+    --pink: #eb4888;
+    --blue: #10a2f5;
+    --yellow: #e9bc3f
+}
+
+body,
+html {
+    width: 100%;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background: var(--white);
+    color: var(--black);
+    font-family: "Roboto Mono", monospace
+}
+
+::selection {
+    background-color: var(--highlight);
+    color: var(--black)
+}
+
+body.dark-mode {
+    background: var(--black);
+    color: var(--white)
+}
+
+.container {
+    margin: 50px auto;
+    padding: 5px;
+    max-width: 650px
+}
+
+@media (max-width:600px) {
+    .container {
+        padding: 20px
+    }
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.header-frame {
+    max-width: 350px
+}
+
+.dark-mode-toggler {
+    position: fixed;
+    top: 5px;
+    right: 20px
+}
+
+.dark-mode-toggler label {
+    position: relative
+}
+
+.dark-mode-toggler input[type=checkbox] {
+    display: none
+}
+
+.dark-mode-toggler input[type=checkbox]+label::before {
+    content: "";
+    display: block;
+    height: 26px;
+    width: 60px;
+    background: var(--white);
+    border: 2px solid var(--gray);
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: -65px
+}
+
+.dark-mode-toggler input[type=checkbox]+label::after {
+    content: "";
+    display: block;
+    height: 20px;
+    width: 20px;
+    background: var(--gray);
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: -62px;
+    transition: all .4s ease-in
+}
+
+.dark-mode-toggler input[type=checkbox]:checked+label::before {
+    background: var(--black);
+    border: 2px solid var(--white)
+}
+
+.dark-mode-toggler input[type=checkbox]:checked+label::after {
+    left: -28px;
+    background: var(--black);
+    border: 2px solid var(--white);
+    transition: all .4s ease-in
+}
+
+h1 {
+    font-weight: 400;
+    margin: 0
+}
+
+h2 {
+    color: var(--gray);
+    font-weight: 300;
+    margin: 0 1em .5em 0
+}
+
+a {
+    color: var(--gray)
+}
+
+a:hover {
+    font-weight: 700
+}
+
+.img-frame {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 0 10px 0;
+    border-radius: 50%;
+    overflow: hidden
+}
+
+.img-frame img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 100%
+}
+
+.links {
+    margin: 25px 0
+}
+
+.links a:not(:last-child) {
+    padding: 0 12px 0 0
+}
+
+@media (max-width:600px) {
+    .links {
+        text-align: center
+    }
+}
+
+.toggler {
+    margin: 25px 0
+}
+
+.toggler .show {
+    border-color: var(--pink);
+    color: var(--pink)
+}
+
+@media (max-width:600px) {
+    .toggler {
+        text-align: center
+    }
+}
+
+.bio {
+    display: none;
+    line-height: 24px
+}
+
+.bio.show {
+    display: block;
+    margin-top: 2vw
+}
