@@ -1,5 +1,3 @@
-let colors = ["#24d05a", "#eb4888", "#10a2f5", "#e9bc3f"];
-
 (function () {
     setModeEventListener();
     setRandomLinkColor();
@@ -20,13 +18,23 @@ function setModeEventListener() {
 
 /* Colors */
 
-function getRandomColor() {
+function getRandomColor(colors) {
     return colors[Math.floor(Math.random() * colors.length)];
 }
 
 function setRandomLinkColor() {
+    let colors = ["#24d05a", "#eb4888", "#10a2f5", "#e9bc3f"];
+
     Array.from(document.getElementsByTagName("a")).forEach((e) => {
-        e.style.color = getRandomColor();
+        // get random color
+        let randomColor = getRandomColor(colors);
+
+        // set random color to currnt link
+        e.style.color = randomColor;
+
+        // remove that color from colors list, so it can't be picked 
+        // randomly again
+        colors = colors.filter(color => color !== randomColor)
     });
 }
 
