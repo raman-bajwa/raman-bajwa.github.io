@@ -101,3 +101,36 @@ dd.clear {
     margin: 0;
     height: 15px;
 }
+
+/* body.preload * {
+    transition-duration: none;
+}
+
+button {
+    transition: all .5s ease;
+    color: #000;
+    border: 2px solid #212147;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    background-color: transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+.filter-green {
+    transition-duration: 1s;
+}
+
+button:hover {
+    color: #fff;
+    transition-duration: 1s;
+    background-color: #212147;
+}
+
+button:hover .filter-green {
+    transition-duration: 1s;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(65deg) brightness(107%) contrast(100%);
+} */
