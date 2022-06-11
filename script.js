@@ -1,7 +1,6 @@
 (function () {
     setModeEventListener();
     setRandomLinkColor();
-    setColorHoverListener();
 
     setInterval(() => {
         setRandomLinkColor();
@@ -37,10 +36,3 @@ function setRandomLinkColor() {
         colors = colors.filter(color => color !== randomColor)
     });
 }
-
-function setColorHoverListener() {
-    Array.from(document.querySelectorAll("a, button")).forEach((e) => {
-        e.addEventListener("mouseover", setRandomLinkColor);
-    });
-}
-
