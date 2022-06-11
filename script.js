@@ -23,7 +23,7 @@ function getRandomColor(colors) {
 }
 
 function setRandomLinkColor() {
-    let colors = ["#24d05a", "#eb4888", "#10a2f5", "#e9bc3f", "#242F9B", "#FF0000"];
+    let colors = ["#24d05a", "#eb4888", "#10a2f5", "#e9bc3f", "#242F9B", "#FF0000", "#0c3866", "#ce181e"];
 
     Array.from(document.getElementsByTagName("a")).forEach((e) => {
         // get random color
