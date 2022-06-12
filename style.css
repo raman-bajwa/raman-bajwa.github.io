@@ -121,11 +121,17 @@ h2 {
 }
 
 a {
-    color: var(--gray)
+    color: var(--gray);
+    text-decoration: none;
 }
 
 a:hover {
-    font-weight: 700
+    /* font-weight: 700 */
+    text-decoration: underline;
+}
+
+.link-bar {
+    color: var(--gray);
 }
 
 .img-frame {
