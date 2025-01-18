@@ -1,3 +1,3 @@
 # Ramanpreet Singh
 
-Hi! You can checkout my Profile and Resume [here](https://raman-bajwa.github.io/).
+Hi! You can checkout my Profile [here](https://raman-bajwa.github.io/).
